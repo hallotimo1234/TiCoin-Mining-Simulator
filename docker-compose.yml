@@ -1,0 +1,10 @@
+services:
+  ticoins:
+    build: .
+    container_name: TiCoinMiner
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - TZ=Europe/Berlin
