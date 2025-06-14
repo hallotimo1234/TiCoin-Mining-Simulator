@@ -7,6 +7,7 @@ Ich empfehle, es nur intern im Heimnetz laufen zu lassen, da Flask nicht gerade 
 Mit dem Webhook, den ich unten im Text erkläre, kann der Verlauf, wann was durch die Simulation gefunden wurde, sicher von außen angezeigt werden, ohne den Dienst ins Internet nach außen verfügbar zu machen. Für den Webhook wird allerdings Discord gebraucht.
 
 
+
 **1. Was macht dieses Programm?**
 
 Simuliert das Mining von TiCoins.
@@ -26,6 +27,7 @@ Installiert benötigte Python-Bibliotheken aus requirements.txt.
 Kopiert deinen Code in den Container.
 Startet dein Programm (app.py).
 Öffnet Port 5000 für die Web-App.
+
 
 requirements.txt
 Listet alle Python-Bibliotheken, die das Programm braucht:
@@ -75,14 +77,15 @@ docker-compose restart
 
 **5. Wie funktioniert der Discord-Webhook aus der app.py?**
 
-  Dein TiCoin Mining Simulator schickt Nachrichten an einen Discord-Textkanal, damit du immer informiert bist, was gerade passiert – ganz automatisch!
-  Was ist ein Discord Webhook?
+Dein TiCoin Mining Simulator schickt Nachrichten an einen Discord-Textkanal, damit du immer informiert bist, was gerade passiert – ganz automatisch!
+Was ist ein Discord Webhook?
 
 Ein Webhook ist eine spezielle Internet-Adresse (URL), die Discord dir gibt.
 Über diese Adresse kannst mit deinem Programm Nachrichten an einen Discord-Textkanal senden.
 Du musst dafür keinen Bot programmieren, sondern nur diese Webhook-URL nutzen, die discord dir gibt.
 
 **6. Wie nutzt bei deinem Programm ein Discord Webhook?**
+
 Im Code gibt es die Variable DISCORD_WEBHOOK_URL. Dort trägst du die Webhook-Adresse ein, die du bei deinem Discord-Server bekommst.
     
 Wenn du nicht möchtest, dass diese Nachrichten an einem Discord-Server-Chatraum gesendet werden, dann passe den Webhook einfach nicht an, also lasse die Variable so, wie sie standardmäßig im Code ist.
@@ -138,4 +141,5 @@ Nutze die Logs auf der Web Oberfläche, um den Mining-Fortschritt zu verfolgen.
 Alternativ kannst du dein Mining Fortschritt über ein Discord Webhook einsehen (sofern dies eingerichtet ist)
 
 **habe diese Anleitung/Beschrreibung mit KI generiert und zimlich viel angepasst hoffe das erleichtert euch bei der einrichtung des Dienstes bin leider nicht so gut in Anleitungen usw. schreiben aber habe mein bestes gegeben!**
-*Viel Spaß euch! MFG Timo*
+
+**Viel Spaß euch! MFG Timo**
