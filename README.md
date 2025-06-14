@@ -2,6 +2,7 @@
 
 Herzlich willkommen zum TiCoin Mining Simulator!
 Hier erfährst du, wie das Programm funktioniert, wie die wichtigen Dateien zusammenarbeiten und wie du alles einfach mit Docker und Docker Compose auf deinem Server laufen lassen kannst.
+
 Ich empfehle, es nur intern im Heimnetz laufen zu lassen, da Flask nicht gerade das Sicherste ist und hauptsächlich nur für Testzwecke ist.
 
 Mit dem Webhook, den ich unten im Text erkläre, kann der Verlauf, wann was durch die Simulation gefunden wurde, sicher von außen angezeigt werden, ohne den Dienst ins Internet nach außen verfügbar zu machen. Für den Webhook wird allerdings Discord gebraucht.
